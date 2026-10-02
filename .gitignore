@@ -1,0 +1,9 @@
+# IDE & Tooling
+.vscode/
+.idea/
+.codeatlas/
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
