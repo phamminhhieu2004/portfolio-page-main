@@ -1352,26 +1352,29 @@
             border: 1px solid rgba(44, 196, 196, 0.2);
             border-radius: 16px;
             padding: 16px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.5), 0 0 0 1px rgba(44,196,196,0.05);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(44, 196, 196, 0.05);
             font-family: Inter, sans-serif;
-            transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
+
         .weather-widget:hover {
-            border-color: rgba(44,196,196,0.35);
-            box-shadow: 0 12px 40px rgba(0,0,0,0.6), 0 0 20px rgba(44,196,196,0.08);
+            border-color: rgba(44, 196, 196, 0.35);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(44, 196, 196, 0.08);
             transform: translateY(-2px);
         }
+
         .weather-header {
             display: flex;
             align-items: center;
             gap: 12px;
             margin-bottom: 12px;
         }
+
         .weather-icon-wrap {
             width: 48px;
             height: 48px;
-            background: linear-gradient(135deg, rgba(44,196,196,0.15), rgba(110,221,221,0.08));
-            border: 1px solid rgba(44,196,196,0.3);
+            background: linear-gradient(135deg, rgba(44, 196, 196, 0.15), rgba(110, 221, 221, 0.08));
+            border: 1px solid rgba(44, 196, 196, 0.3);
             border-radius: 12px;
             display: flex;
             align-items: center;
@@ -1381,7 +1384,12 @@
             flex-shrink: 0;
             transition: all 0.4s ease;
         }
-        .weather-location-time { flex: 1; min-width: 0; }
+
+        .weather-location-time {
+            flex: 1;
+            min-width: 0;
+        }
+
         .weather-location {
             font-size: 0.72rem;
             font-weight: 600;
@@ -1392,7 +1400,11 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
-        .weather-location i { margin-right: 4px; }
+
+        .weather-location i {
+            margin-right: 4px;
+        }
+
         .weather-time {
             font-family: 'JetBrains Mono', monospace;
             font-size: 1.25rem;
@@ -1401,18 +1413,24 @@
             line-height: 1.2;
             letter-spacing: 0.05em;
         }
+
         .weather-date {
             font-size: 0.68rem;
             color: var(--text-secondary);
             margin-top: 1px;
         }
-        .weather-body { margin-bottom: 10px; }
+
+        .weather-body {
+            margin-bottom: 10px;
+        }
+
         .weather-temp-main {
             display: flex;
             align-items: flex-start;
             gap: 2px;
             margin-bottom: 4px;
         }
+
         .weather-temp-val {
             font-family: Rajdhani, sans-serif;
             font-size: 2.6rem;
@@ -1420,46 +1438,65 @@
             color: var(--text-primary);
             line-height: 1;
         }
+
         .weather-temp-unit {
             font-size: 1rem;
             color: var(--text-secondary);
             margin-top: 6px;
             font-weight: 500;
         }
+
         .weather-desc {
             font-size: 0.78rem;
             color: var(--text-secondary);
             margin-bottom: 10px;
         }
+
         .weather-stats {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 6px;
         }
+
         .weather-stat {
-            background: rgba(255,255,255,0.03);
-            border: 1px solid rgba(255,255,255,0.06);
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
             border-radius: 8px;
             padding: 6px 8px;
             display: flex;
             flex-direction: column;
             gap: 2px;
         }
-        .weather-stat i { font-size: 0.75rem; }
-        .weather-stat span { font-size: 0.65rem; color: var(--text-muted); }
-        .weather-stat strong { font-size: 0.78rem; color: var(--text-primary); font-weight: 600; }
+
+        .weather-stat i {
+            font-size: 0.75rem;
+        }
+
+        .weather-stat span {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+        }
+
+        .weather-stat strong {
+            font-size: 0.78rem;
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
         .weather-footer {
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding-top: 8px;
-            border-top: 1px solid rgba(255,255,255,0.06);
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
         }
+
         .weather-updated {
             font-size: 0.62rem;
             color: var(--text-muted);
             font-family: 'JetBrains Mono', monospace;
         }
+
         .weather-refresh {
             background: none;
             border: none;
@@ -1470,18 +1507,24 @@
             font-size: 0.75rem;
             transition: all 0.3s ease;
         }
-        .weather-refresh:hover { color: var(--accent); background: var(--accent-dim); }
+
+        .weather-refresh:hover {
+            color: var(--accent);
+            background: var(--accent-dim);
+        }
 
         /* Weather City Search */
         .weather-search-wrap {
             position: relative;
             margin-bottom: 10px;
         }
+
         .weather-search-box {
             position: relative;
             display: flex;
             align-items: center;
         }
+
         .weather-search-icon {
             position: absolute;
             left: 9px;
@@ -1489,10 +1532,11 @@
             font-size: 0.7rem;
             pointer-events: none;
         }
+
         .weather-city-input {
             width: 100%;
-            background: rgba(255,255,255,0.04);
-            border: 1px solid rgba(44,196,196,0.15);
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(44, 196, 196, 0.15);
             border-radius: 8px;
             color: var(--text-primary);
             font-family: Inter, sans-serif;
@@ -1501,25 +1545,41 @@
             outline: none;
             transition: border-color 0.2s ease;
         }
-        .weather-city-input:focus { border-color: rgba(44,196,196,0.4); background: rgba(44,196,196,0.05); }
-        .weather-city-input::placeholder { color: var(--text-muted); }
+
+        .weather-city-input:focus {
+            border-color: rgba(44, 196, 196, 0.4);
+            background: rgba(44, 196, 196, 0.05);
+        }
+
+        .weather-city-input::placeholder {
+            color: var(--text-muted);
+        }
+
         .weather-city-dropdown {
             position: absolute;
             top: calc(100% + 4px);
             left: 0;
             right: 0;
-            background: rgba(17,24,32,0.98);
+            background: rgba(17, 24, 32, 0.98);
             backdrop-filter: blur(16px);
-            border: 1px solid rgba(44,196,196,0.2);
+            border: 1px solid rgba(44, 196, 196, 0.2);
             border-radius: 10px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.55);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55);
             z-index: 200;
             display: none;
             max-height: 200px;
             overflow-y: auto;
         }
-        .weather-city-dropdown::-webkit-scrollbar { width: 3px; }
-        .weather-city-dropdown::-webkit-scrollbar-thumb { background: rgba(44,196,196,0.3); border-radius: 3px; }
+
+        .weather-city-dropdown::-webkit-scrollbar {
+            width: 3px;
+        }
+
+        .weather-city-dropdown::-webkit-scrollbar-thumb {
+            background: rgba(44, 196, 196, 0.3);
+            border-radius: 3px;
+        }
+
         .city-option {
             display: flex;
             align-items: center;
@@ -1529,18 +1589,48 @@
             font-size: 0.78rem;
             color: var(--text-secondary);
             transition: all 0.15s ease;
-            border-bottom: 1px solid rgba(255,255,255,0.04);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
         }
-        .city-option:last-child { border-bottom: none; }
-        .city-option:hover { background: rgba(44,196,196,0.08); color: var(--text-primary); }
-        .city-option.no-result { cursor: default; color: var(--text-muted); font-style: italic; }
-        .city-option.no-result:hover { background: none; }
-        .city-flag { font-size: 1rem; flex-shrink: 0; }
-        .city-label { flex: 1; font-weight: 500; }
-        .city-country { font-size: 0.65rem; color: var(--text-muted); font-family: 'JetBrains Mono', monospace; }
+
+        .city-option:last-child {
+            border-bottom: none;
+        }
+
+        .city-option:hover {
+            background: rgba(44, 196, 196, 0.08);
+            color: var(--text-primary);
+        }
+
+        .city-option.no-result {
+            cursor: default;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .city-option.no-result:hover {
+            background: none;
+        }
+
+        .city-flag {
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        .city-label {
+            flex: 1;
+            font-weight: 500;
+        }
+
+        .city-country {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            font-family: 'JetBrains Mono', monospace;
+        }
 
         @media(max-width: 600px) {
-            .weather-widget { display: none; }
+            .weather-widget {
+                display: none;
+            }
         }
 
         /* ===== CHATBOT WIDGET ===== */
@@ -1560,24 +1650,35 @@
             justify-content: center;
             font-size: 1.35rem;
             color: #fff;
-            box-shadow: 0 4px 20px rgba(44,196,196,0.4), 0 0 0 0 rgba(44,196,196,0.3);
-            transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+            box-shadow: 0 4px 20px rgba(44, 196, 196, 0.4), 0 0 0 0 rgba(44, 196, 196, 0.3);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             animation: fabPulse 3s ease-in-out infinite;
         }
+
         @keyframes fabPulse {
-            0%,100% { box-shadow: 0 4px 20px rgba(44,196,196,0.4), 0 0 0 0 rgba(44,196,196,0.3); }
-            50% { box-shadow: 0 4px 24px rgba(44,196,196,0.5), 0 0 0 8px rgba(44,196,196,0.08); }
+
+            0%,
+            100% {
+                box-shadow: 0 4px 20px rgba(44, 196, 196, 0.4), 0 0 0 0 rgba(44, 196, 196, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 4px 24px rgba(44, 196, 196, 0.5), 0 0 0 8px rgba(44, 196, 196, 0.08);
+            }
         }
+
         .chatbot-fab:hover {
             transform: scale(1.1) rotate(-5deg);
-            box-shadow: 0 8px 30px rgba(44,196,196,0.55);
+            box-shadow: 0 8px 30px rgba(44, 196, 196, 0.55);
             animation: none;
         }
+
         .chatbot-fab.active {
             background: linear-gradient(135deg, #e8a020, #c07010);
             animation: none;
             transform: rotate(20deg);
         }
+
         .chatbot-fab-badge {
             position: absolute;
             top: -4px;
@@ -1595,17 +1696,35 @@
             letter-spacing: 0.04em;
             animation: badgeBounce 0.5s ease;
         }
+
         @keyframes badgeBounce {
-            0% { transform: scale(0); }
-            70% { transform: scale(1.2); }
-            100% { transform: scale(1); }
+            0% {
+                transform: scale(0);
+            }
+
+            70% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
+
         .chatbot-fab-badge.pulse {
             animation: badgePulse 1.5s ease-in-out infinite;
         }
+
         @keyframes badgePulse {
-            0%,100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
         }
 
         .chatbot-panel {
@@ -1618,32 +1737,40 @@
             background: rgba(17, 24, 32, 0.95);
             backdrop-filter: blur(24px);
             -webkit-backdrop-filter: blur(24px);
-            border: 1px solid rgba(44,196,196,0.2);
+            border: 1px solid rgba(44, 196, 196, 0.2);
             border-radius: 20px;
             display: flex;
             flex-direction: column;
-            box-shadow: 0 16px 48px rgba(0,0,0,0.65), 0 0 0 1px rgba(44,196,196,0.07);
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(44, 196, 196, 0.07);
             opacity: 0;
             transform: translateY(20px) scale(0.95);
             pointer-events: none;
-            transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
             transform-origin: bottom right;
         }
+
         .chatbot-panel.open {
             opacity: 1;
             transform: translateY(0) scale(1);
             pointer-events: all;
         }
+
         .chatbot-header {
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 16px 18px 14px;
-            border-bottom: 1px solid rgba(44,196,196,0.12);
-            background: linear-gradient(135deg, rgba(44,196,196,0.08), rgba(44,196,196,0.03));
+            border-bottom: 1px solid rgba(44, 196, 196, 0.12);
+            background: linear-gradient(135deg, rgba(44, 196, 196, 0.08), rgba(44, 196, 196, 0.03));
             border-radius: 20px 20px 0 0;
         }
-        .chatbot-header-info { display: flex; align-items: center; gap: 12px; }
+
+        .chatbot-header-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
         .chatbot-avatar {
             position: relative;
             width: 40px;
@@ -1657,6 +1784,7 @@
             color: #fff;
             flex-shrink: 0;
         }
+
         .chatbot-online-dot {
             position: absolute;
             bottom: 1px;
@@ -1668,25 +1796,42 @@
             border: 2px solid var(--bg-surface);
             animation: onlinePulse 2s ease-in-out infinite;
         }
+
         @keyframes onlinePulse {
-            0%,100% { transform: scale(1); opacity: 1; }
-            50% { transform: scale(1.2); opacity: 0.7; }
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.2);
+                opacity: 0.7;
+            }
         }
+
         .chatbot-title {
             font-family: Rajdhani, sans-serif;
             font-size: 1rem;
             font-weight: 700;
             color: var(--text-primary);
         }
+
         .chatbot-subtitle {
             font-size: 0.68rem;
             color: var(--accent);
             font-family: 'JetBrains Mono', monospace;
         }
-        .chatbot-header-actions { display: flex; gap: 6px; }
+
+        .chatbot-header-actions {
+            display: flex;
+            gap: 6px;
+        }
+
         .chatbot-action-btn {
             background: none;
-            border: 1px solid rgba(255,255,255,0.08);
+            border: 1px solid rgba(255, 255, 255, 0.08);
             color: var(--text-muted);
             width: 30px;
             height: 30px;
@@ -1698,8 +1843,18 @@
             justify-content: center;
             transition: all 0.2s ease;
         }
-        .chatbot-action-btn:hover { background: var(--accent-dim); color: var(--accent); border-color: rgba(44,196,196,0.3); }
-        #chatbot-close:hover { background: rgba(220,50,50,0.15); color: #ff6b6b; border-color: rgba(220,50,50,0.3); }
+
+        .chatbot-action-btn:hover {
+            background: var(--accent-dim);
+            color: var(--accent);
+            border-color: rgba(44, 196, 196, 0.3);
+        }
+
+        #chatbot-close:hover {
+            background: rgba(220, 50, 50, 0.15);
+            color: #ff6b6b;
+            border-color: rgba(220, 50, 50, 0.3);
+        }
 
         .chatbot-messages {
             flex: 1;
@@ -1710,18 +1865,50 @@
             gap: 12px;
             scroll-behavior: smooth;
         }
-        .chatbot-messages::-webkit-scrollbar { width: 4px; }
-        .chatbot-messages::-webkit-scrollbar-track { background: transparent; }
-        .chatbot-messages::-webkit-scrollbar-thumb { background: rgba(44,196,196,0.2); border-radius: 4px; }
-        .chatbot-messages::-webkit-scrollbar-thumb:hover { background: rgba(44,196,196,0.4); }
 
-        .chat-msg { display: flex; flex-direction: column; animation: msgSlide 0.3s ease; }
-        @keyframes msgSlide {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+        .chatbot-messages::-webkit-scrollbar {
+            width: 4px;
         }
-        .chat-msg.user { align-items: flex-end; }
-        .chat-msg.bot { align-items: flex-start; }
+
+        .chatbot-messages::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .chatbot-messages::-webkit-scrollbar-thumb {
+            background: rgba(44, 196, 196, 0.2);
+            border-radius: 4px;
+        }
+
+        .chatbot-messages::-webkit-scrollbar-thumb:hover {
+            background: rgba(44, 196, 196, 0.4);
+        }
+
+        .chat-msg {
+            display: flex;
+            flex-direction: column;
+            animation: msgSlide 0.3s ease;
+        }
+
+        @keyframes msgSlide {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .chat-msg.user {
+            align-items: flex-end;
+        }
+
+        .chat-msg.bot {
+            align-items: flex-start;
+        }
+
         .chat-bubble {
             max-width: 80%;
             padding: 10px 14px;
@@ -1730,34 +1917,43 @@
             line-height: 1.55;
             word-break: break-word;
         }
+
         .chat-msg.user .chat-bubble {
             background: linear-gradient(135deg, #2cc4c4, #1a9090);
             color: #fff;
             border-bottom-right-radius: 4px;
         }
+
         .chat-msg.bot .chat-bubble {
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.08);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
             color: var(--text-primary);
             border-bottom-left-radius: 4px;
         }
+
         .chat-bubble code {
-            background: rgba(44,196,196,0.12);
+            background: rgba(44, 196, 196, 0.12);
             color: var(--accent);
             padding: 1px 5px;
             border-radius: 4px;
             font-family: 'JetBrains Mono', monospace;
             font-size: 0.8em;
         }
+
         .chat-bubble pre {
-            background: rgba(0,0,0,0.3);
-            border: 1px solid rgba(44,196,196,0.15);
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(44, 196, 196, 0.15);
             border-radius: 8px;
             padding: 10px;
             margin: 6px 0;
             overflow-x: auto;
         }
-        .chat-bubble pre code { background: none; padding: 0; }
+
+        .chat-bubble pre code {
+            background: none;
+            padding: 0;
+        }
+
         .chat-time {
             font-size: 0.62rem;
             color: var(--text-muted);
@@ -1771,6 +1967,7 @@
             align-items: center;
             gap: 5px;
         }
+
         .chatbot-typing span {
             width: 7px;
             height: 7px;
@@ -1779,11 +1976,28 @@
             opacity: 0.4;
             animation: typingDot 1.2s ease-in-out infinite;
         }
-        .chatbot-typing span:nth-child(2) { animation-delay: 0.2s; }
-        .chatbot-typing span:nth-child(3) { animation-delay: 0.4s; }
+
+        .chatbot-typing span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .chatbot-typing span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
         @keyframes typingDot {
-            0%,60%,100% { transform: translateY(0); opacity: 0.4; }
-            30% { transform: translateY(-5px); opacity: 1; }
+
+            0%,
+            60%,
+            100% {
+                transform: translateY(0);
+                opacity: 0.4;
+            }
+
+            30% {
+                transform: translateY(-5px);
+                opacity: 1;
+            }
         }
 
         .chatbot-input-area {
@@ -1791,12 +2005,13 @@
             align-items: flex-end;
             gap: 10px;
             padding: 12px 14px;
-            border-top: 1px solid rgba(44,196,196,0.1);
+            border-top: 1px solid rgba(44, 196, 196, 0.1);
         }
+
         .chatbot-input {
             flex: 1;
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(44,196,196,0.15);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(44, 196, 196, 0.15);
             border-radius: 12px;
             color: var(--text-primary);
             font-family: Inter, sans-serif;
@@ -1808,9 +2023,19 @@
             line-height: 1.5;
             transition: border-color 0.2s ease;
         }
-        .chatbot-input:focus { border-color: rgba(44,196,196,0.45); }
-        .chatbot-input::placeholder { color: var(--text-muted); }
-        .chatbot-input:disabled { opacity: 0.5; }
+
+        .chatbot-input:focus {
+            border-color: rgba(44, 196, 196, 0.45);
+        }
+
+        .chatbot-input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .chatbot-input:disabled {
+            opacity: 0.5;
+        }
+
         .chatbot-send-btn {
             width: 40px;
             height: 40px;
@@ -1826,12 +2051,28 @@
             flex-shrink: 0;
             transition: all 0.2s ease;
         }
-        .chatbot-send-btn:hover:not(:disabled) { transform: scale(1.08); box-shadow: 0 4px 12px rgba(44,196,196,0.4); }
-        .chatbot-send-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+        .chatbot-send-btn:hover:not(:disabled) {
+            transform: scale(1.08);
+            box-shadow: 0 4px 12px rgba(44, 196, 196, 0.4);
+        }
+
+        .chatbot-send-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
 
         @media(max-width: 480px) {
-            .chatbot-panel { width: calc(100vw - 20px); right: 10px; bottom: 90px; }
-            .chatbot-fab { right: 16px; bottom: 16px; }
+            .chatbot-panel {
+                width: calc(100vw - 20px);
+                right: 10px;
+                bottom: 90px;
+            }
+
+            .chatbot-fab {
+                right: 16px;
+                bottom: 16px;
+            }
         }
     </style>
 </head>
@@ -2033,7 +2274,8 @@
                 </div>
             </div>
             <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="200">
-                <a href="Pham_Minh_Hieu_CV.txt" download="Pham_Minh_Hieu_CV.txt" id="download-cv" class="btn-primary-dev btn-download-cv"><i class="fas fa-download fa-sm"></i> Tải CV (.txt)</a>
+                <a href="Pham_Minh_Hieu_CV.txt" download="Pham_Minh_Hieu_CV.txt" id="download-cv"
+                    class="btn-primary-dev btn-download-cv"><i class="fas fa-download fa-sm"></i> Tải CV (.txt)</a>
             </div>
         </div>
     </section>
@@ -2210,7 +2452,8 @@
                 </div>
             </div>
             <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="250">
-                <a href="Pham_Minh_Hieu_CV.txt" download="Pham_Minh_Hieu_CV.txt" class="btn-primary-dev btn-download-cv"><i class="fas fa-file-alt fa-sm"></i> Tải CV (.txt)</a>
+                <a href="Pham_Minh_Hieu_CV.txt" download="Pham_Minh_Hieu_CV.txt"
+                    class="btn-primary-dev btn-download-cv"><i class="fas fa-file-alt fa-sm"></i> Tải CV (.txt)</a>
             </div>
         </div>
     </section>
@@ -2301,7 +2544,8 @@
     <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up fa-sm"></i></button>
 
     <!-- CV Download Toast Notification -->
-    <div id="cv-toast" style="position:fixed;bottom:28px;right:28px;z-index:99999;background:var(--bg-elevated);color:var(--text-primary);border:1px solid var(--accent);border-radius:8px;padding:14px 20px;box-shadow:0 8px 30px rgba(0,0,0,0.65);display:none;align-items:center;gap:12px;font-size:0.88rem;transition:opacity 0.3s ease, transform 0.3s ease;transform:translateY(20px);opacity:0;">
+    <div id="cv-toast"
+        style="position:fixed;bottom:28px;right:28px;z-index:99999;background:var(--bg-elevated);color:var(--text-primary);border:1px solid var(--accent);border-radius:8px;padding:14px 20px;box-shadow:0 8px 30px rgba(0,0,0,0.65);display:none;align-items:center;gap:12px;font-size:0.88rem;transition:opacity 0.3s ease, transform 0.3s ease;transform:translateY(20px);opacity:0;">
         <i class="fas fa-check-circle" style="color:var(--success);font-size:1.15rem;"></i>
         <span id="cv-toast-msg">Đã tạo link và tải file Pham_Minh_Hieu_CV.txt thành công!</span>
     </div>
@@ -2337,7 +2581,7 @@
                 });
             });
             function initSkillBars() { setTimeout(function () { document.querySelectorAll(".skill-fill").forEach(function (b) { b.style.width = b.getAttribute("data-width"); }); }, 400); }
-            function initTyping() { var el = document.getElementById("typing-text"); if (!el) return; var phrases = ["Sinh viên Công nghệ Ô tô", "Lập trình viên Backend", "Đam mê Spring Boot", "Kỹ sư FastAPI & Node.js", "Ô tô + Code = 🚗💻"]; var pi = 0, ci = 0, del = false; function tick() { var p = phrases[pi]; if (!del) { el.textContent = p.slice(0, ++ci); if (ci === p.length) { del = true; setTimeout(tick, 1800); return; } } else { el.textContent = p.slice(0, --ci); if (ci === 0) { del = false; pi = (pi + 1) % phrases.length; } } setTimeout(tick, del ? 42 : 72); } setTimeout(tick, 600); }
+            function initTyping() { var el = document.getElementById("typing-text"); if (!el) return; var phrases = ["Hồ Chí Minh muôn năm", "Việt Nam muôn năm", "Hoàng Sa là của Việt Nam", "Trường Sa là của Việt Nam", "trung quốc tuổi lồn"]; var pi = 0, ci = 0, del = false; function tick() { var p = phrases[pi]; if (!del) { el.textContent = p.slice(0, ++ci); if (ci === p.length) { del = true; setTimeout(tick, 1800); return; } } else { el.textContent = p.slice(0, --ci); if (ci === 0) { del = false; pi = (pi + 1) % phrases.length; } } setTimeout(tick, del ? 42 : 72); } setTimeout(tick, 600); }
             var form = document.getElementById("contact-form");
             if (form) {
                 // ============================================================
@@ -2531,7 +2775,8 @@
                 <i class="fas fa-cloud-sun" id="weather-icon"></i>
             </div>
             <div class="weather-location-time">
-                <div class="weather-location" id="weather-location"><i class="fas fa-map-marker-alt"></i> Đang tải...</div>
+                <div class="weather-location" id="weather-location"><i class="fas fa-map-marker-alt"></i> Đang tải...
+                </div>
                 <div class="weather-time" id="weather-time">--:--</div>
                 <div class="weather-date" id="weather-date">--/--/----</div>
             </div>
@@ -2540,7 +2785,8 @@
         <div class="weather-search-wrap">
             <div class="weather-search-box">
                 <i class="fas fa-search weather-search-icon"></i>
-                <input type="text" id="weather-city-input" class="weather-city-input" placeholder="Tìm thành phố..." autocomplete="off">
+                <input type="text" id="weather-city-input" class="weather-city-input" placeholder="Tìm thành phố..."
+                    autocomplete="off">
             </div>
             <div class="weather-city-dropdown" id="weather-city-dropdown"></div>
         </div>
@@ -2599,14 +2845,16 @@
                 </div>
             </div>
             <div class="chatbot-header-actions">
-                <button class="chatbot-action-btn" id="chatbot-clear" title="Xóa lịch sử"><i class="fas fa-trash-alt"></i></button>
+                <button class="chatbot-action-btn" id="chatbot-clear" title="Xóa lịch sử"><i
+                        class="fas fa-trash-alt"></i></button>
                 <button class="chatbot-action-btn" id="chatbot-close" title="Đóng"><i class="fas fa-times"></i></button>
             </div>
         </div>
         <div class="chatbot-messages" id="chatbot-messages">
             <div class="chat-msg bot">
                 <div class="chat-bubble">
-                    <span>👋 Xin chào! Tôi là <strong>Gemini AI</strong>. Bạn có thể hỏi tôi bất cứ điều gì — về portfolio, công nghệ ô tô, lập trình, hay bất cứ chủ đề nào khác!</span>
+                    <span>👋 Xin chào! Tôi là <strong>Gemini AI</strong>. Bạn có thể hỏi tôi bất cứ điều gì — về
+                        portfolio, công nghệ ô tô, lập trình, hay bất cứ chủ đề nào khác!</span>
                 </div>
                 <div class="chat-time">Gemini • Ngay bây giờ</div>
             </div>
@@ -2615,7 +2863,8 @@
             <span></span><span></span><span></span>
         </div>
         <div class="chatbot-input-area">
-            <textarea id="chatbot-input" class="chatbot-input" placeholder="Nhập câu hỏi của bạn..." rows="1"></textarea>
+            <textarea id="chatbot-input" class="chatbot-input" placeholder="Nhập câu hỏi của bạn..."
+                rows="1"></textarea>
             <button id="chatbot-send" class="chatbot-send-btn" title="Gửi">
                 <i class="fas fa-paper-plane"></i>
             </button>
@@ -2623,482 +2872,482 @@
     </div>
 
     <script>
-    // ===== WEATHER WIDGET SCRIPT =====
-    (function() {
-        var CITIES = [
-            // ===== 63 TỈNH / THÀNH PHỐ VIỆT NAM =====
-            { name: 'Hồ Chí Minh', country: 'VN', lat: 10.8231, lon: 106.6297, tz: 'Asia/Bangkok' },
-            { name: 'Hà Nội', country: 'VN', lat: 21.0285, lon: 105.8542, tz: 'Asia/Bangkok' },
-            { name: 'Đà Nẵng', country: 'VN', lat: 16.0544, lon: 108.2022, tz: 'Asia/Bangkok' },
-            { name: 'Hải Phòng', country: 'VN', lat: 20.8449, lon: 106.6881, tz: 'Asia/Bangkok' },
-            { name: 'Cần Thơ', country: 'VN', lat: 10.0452, lon: 105.7469, tz: 'Asia/Bangkok' },
-            { name: 'An Giang', country: 'VN', lat: 10.5214, lon: 105.1259, tz: 'Asia/Bangkok' },
-            { name: 'Bà Rịa - Vũng Tàu', country: 'VN', lat: 10.4113, lon: 107.1365, tz: 'Asia/Bangkok' },
-            { name: 'Bắc Giang', country: 'VN', lat: 21.2819, lon: 106.1975, tz: 'Asia/Bangkok' },
-            { name: 'Bắc Kạn', country: 'VN', lat: 22.1477, lon: 105.8348, tz: 'Asia/Bangkok' },
-            { name: 'Bạc Liêu', country: 'VN', lat: 9.2941, lon: 105.7272, tz: 'Asia/Bangkok' },
-            { name: 'Bắc Ninh', country: 'VN', lat: 21.1862, lon: 106.0763, tz: 'Asia/Bangkok' },
-            { name: 'Bến Tre', country: 'VN', lat: 10.2415, lon: 106.3756, tz: 'Asia/Bangkok' },
-            { name: 'Bình Định', country: 'VN', lat: 13.7765, lon: 109.2233, tz: 'Asia/Bangkok' },
-            { name: 'Bình Dương', country: 'VN', lat: 11.1629, lon: 106.6522, tz: 'Asia/Bangkok' },
-            { name: 'Bình Phước', country: 'VN', lat: 11.7512, lon: 106.7235, tz: 'Asia/Bangkok' },
-            { name: 'Bình Thuận', country: 'VN', lat: 11.0904, lon: 108.0721, tz: 'Asia/Bangkok' },
-            { name: 'Cà Mau', country: 'VN', lat: 9.1769, lon: 105.1502, tz: 'Asia/Bangkok' },
-            { name: 'Cao Bằng', country: 'VN', lat: 22.6657, lon: 106.2522, tz: 'Asia/Bangkok' },
-            { name: 'Đậk Lậk', country: 'VN', lat: 12.6661, lon: 108.0503, tz: 'Asia/Bangkok' },
-            { name: 'Đậk Nông', country: 'VN', lat: 12.0046, lon: 107.6878, tz: 'Asia/Bangkok' },
-            { name: 'Điện Biên', country: 'VN', lat: 21.3860, lon: 103.0160, tz: 'Asia/Bangkok' },
-            { name: 'Đồng Nai', country: 'VN', lat: 11.0686, lon: 107.1676, tz: 'Asia/Bangkok' },
-            { name: 'Đồng Tháp', country: 'VN', lat: 10.4937, lon: 105.6882, tz: 'Asia/Bangkok' },
-            { name: 'Gia Lai', country: 'VN', lat: 13.8079, lon: 108.1094, tz: 'Asia/Bangkok' },
-            { name: 'Hà Giang', country: 'VN', lat: 22.8026, lon: 104.9784, tz: 'Asia/Bangkok' },
-            { name: 'Hà Nam', country: 'VN', lat: 20.5835, lon: 105.9231, tz: 'Asia/Bangkok' },
-            { name: 'Hà Tĩnh', country: 'VN', lat: 18.3559, lon: 105.8879, tz: 'Asia/Bangkok' },
-            { name: 'Hải Dương', country: 'VN', lat: 20.9397, lon: 106.3312, tz: 'Asia/Bangkok' },
-            { name: 'Hậu Giang', country: 'VN', lat: 9.7883, lon: 105.4663, tz: 'Asia/Bangkok' },
-            { name: 'Hòa Bình', country: 'VN', lat: 20.8131, lon: 105.3381, tz: 'Asia/Bangkok' },
-            { name: 'Hưng Yên', country: 'VN', lat: 20.6464, lon: 106.0511, tz: 'Asia/Bangkok' },
-            { name: 'Khánh Hòa', country: 'VN', lat: 12.2388, lon: 109.1967, tz: 'Asia/Bangkok' },
-            { name: 'Kiên Giang', country: 'VN', lat: 10.0125, lon: 105.0809, tz: 'Asia/Bangkok' },
-            { name: 'Kon Tum', country: 'VN', lat: 14.3497, lon: 108.0005, tz: 'Asia/Bangkok' },
-            { name: 'Lai Châu', country: 'VN', lat: 22.3862, lon: 103.4706, tz: 'Asia/Bangkok' },
-            { name: 'Lâm Đồng', country: 'VN', lat: 11.9465, lon: 108.4419, tz: 'Asia/Bangkok' },
-            { name: 'Lạng Sơn', country: 'VN', lat: 21.8527, lon: 106.7611, tz: 'Asia/Bangkok' },
-            { name: 'Lào Cai', country: 'VN', lat: 22.4809, lon: 103.9755, tz: 'Asia/Bangkok' },
-            { name: 'Long An', country: 'VN', lat: 10.5355, lon: 106.4154, tz: 'Asia/Bangkok' },
-            { name: 'Nam Định', country: 'VN', lat: 20.4388, lon: 106.1621, tz: 'Asia/Bangkok' },
-            { name: 'Nghệ An', country: 'VN', lat: 18.9082, lon: 105.6812, tz: 'Asia/Bangkok' },
-            { name: 'Ninh Bình', country: 'VN', lat: 20.2538, lon: 105.9745, tz: 'Asia/Bangkok' },
-            { name: 'Ninh Thuận', country: 'VN', lat: 11.5654, lon: 108.9888, tz: 'Asia/Bangkok' },
-            { name: 'Phú Thọ', country: 'VN', lat: 21.4213, lon: 105.2200, tz: 'Asia/Bangkok' },
-            { name: 'Phú Yên', country: 'VN', lat: 13.0882, lon: 109.0929, tz: 'Asia/Bangkok' },
-            { name: 'Quảng Bình', country: 'VN', lat: 17.4689, lon: 106.5980, tz: 'Asia/Bangkok' },
-            { name: 'Quảng Nam', country: 'VN', lat: 15.5736, lon: 108.4783, tz: 'Asia/Bangkok' },
-            { name: 'Quảng Ngãi', country: 'VN', lat: 15.1214, lon: 108.8044, tz: 'Asia/Bangkok' },
-            { name: 'Quảng Ninh', country: 'VN', lat: 21.0064, lon: 107.2925, tz: 'Asia/Bangkok' },
-            { name: 'Quảng Trị', country: 'VN', lat: 16.7403, lon: 107.1854, tz: 'Asia/Bangkok' },
-            { name: 'Sóc Trăng', country: 'VN', lat: 9.6037, lon: 105.9737, tz: 'Asia/Bangkok' },
-            { name: 'Sơn La', country: 'VN', lat: 21.3274, lon: 103.9150, tz: 'Asia/Bangkok' },
-            { name: 'Tây Ninh', country: 'VN', lat: 11.3352, lon: 106.1098, tz: 'Asia/Bangkok' },
-            { name: 'Thái Bình', country: 'VN', lat: 20.4463, lon: 106.3365, tz: 'Asia/Bangkok' },
-            { name: 'Thái Nguyên', country: 'VN', lat: 21.5942, lon: 105.8412, tz: 'Asia/Bangkok' },
-            { name: 'Thanh Hóa', country: 'VN', lat: 19.8067, lon: 105.7851, tz: 'Asia/Bangkok' },
-            { name: 'Thừa Thiên Huế', country: 'VN', lat: 16.4637, lon: 107.5909, tz: 'Asia/Bangkok' },
-            { name: 'Tiền Giang', country: 'VN', lat: 10.3494, lon: 106.3583, tz: 'Asia/Bangkok' },
-            { name: 'Trà Vinh', country: 'VN', lat: 9.9477, lon: 106.3445, tz: 'Asia/Bangkok' },
-            { name: 'Tuyên Quang', country: 'VN', lat: 21.8236, lon: 105.2181, tz: 'Asia/Bangkok' },
-            { name: 'Vĩnh Long', country: 'VN', lat: 10.2538, lon: 105.9721, tz: 'Asia/Bangkok' },
-            { name: 'Vĩnh Phúc', country: 'VN', lat: 21.3609, lon: 105.5474, tz: 'Asia/Bangkok' },
-            { name: 'Yên Bái', country: 'VN', lat: 21.7051, lon: 104.8752, tz: 'Asia/Bangkok' },
-            // ===== QUỐC TẾ =====
-            { name: 'Tokyo', country: 'JP', lat: 35.6762, lon: 139.6503, tz: 'Asia/Tokyo' },
-            { name: 'Seoul', country: 'KR', lat: 37.5665, lon: 126.9780, tz: 'Asia/Seoul' },
-            { name: 'Singapore', country: 'SG', lat: 1.3521, lon: 103.8198, tz: 'Asia/Singapore' },
-            { name: 'Bangkok', country: 'TH', lat: 13.7563, lon: 100.5018, tz: 'Asia/Bangkok' },
-            { name: 'Beijing', country: 'CN', lat: 39.9042, lon: 116.4074, tz: 'Asia/Shanghai' },
-            { name: 'Shanghai', country: 'CN', lat: 31.2304, lon: 121.4737, tz: 'Asia/Shanghai' },
-            { name: 'Hong Kong', country: 'HK', lat: 22.3193, lon: 114.1694, tz: 'Asia/Hong_Kong' },
-            { name: 'Osaka', country: 'JP', lat: 34.6937, lon: 135.5023, tz: 'Asia/Tokyo' },
-            { name: 'Taipei', country: 'TW', lat: 25.0330, lon: 121.5654, tz: 'Asia/Taipei' },
-            { name: 'Jakarta', country: 'ID', lat: -6.2088, lon: 106.8456, tz: 'Asia/Jakarta' },
-            { name: 'Kuala Lumpur', country: 'MY', lat: 3.1390, lon: 101.6869, tz: 'Asia/Kuala_Lumpur' },
-            { name: 'Manila', country: 'PH', lat: 14.5995, lon: 120.9842, tz: 'Asia/Manila' },
-            { name: 'London', country: 'GB', lat: 51.5074, lon: -0.1278, tz: 'Europe/London' },
-            { name: 'Paris', country: 'FR', lat: 48.8566, lon: 2.3522, tz: 'Europe/Paris' },
-            { name: 'Berlin', country: 'DE', lat: 52.5200, lon: 13.4050, tz: 'Europe/Berlin' },
-            { name: 'New York', country: 'US', lat: 40.7128, lon: -74.0060, tz: 'America/New_York' },
-            { name: 'Los Angeles', country: 'US', lat: 34.0522, lon: -118.2437, tz: 'America/Los_Angeles' },
-            { name: 'Sydney', country: 'AU', lat: -33.8688, lon: 151.2093, tz: 'Australia/Sydney' },
-            { name: 'Dubai', country: 'AE', lat: 25.2048, lon: 55.2708, tz: 'Asia/Dubai' },
-            { name: 'Moscow', country: 'RU', lat: 55.7558, lon: 37.6173, tz: 'Europe/Moscow' }
-        ];
+        // ===== WEATHER WIDGET SCRIPT =====
+        (function () {
+            var CITIES = [
+                // ===== 63 TỈNH / THÀNH PHỐ VIỆT NAM =====
+                { name: 'Hồ Chí Minh', country: 'VN', lat: 10.8231, lon: 106.6297, tz: 'Asia/Bangkok' },
+                { name: 'Hà Nội', country: 'VN', lat: 21.0285, lon: 105.8542, tz: 'Asia/Bangkok' },
+                { name: 'Đà Nẵng', country: 'VN', lat: 16.0544, lon: 108.2022, tz: 'Asia/Bangkok' },
+                { name: 'Hải Phòng', country: 'VN', lat: 20.8449, lon: 106.6881, tz: 'Asia/Bangkok' },
+                { name: 'Cần Thơ', country: 'VN', lat: 10.0452, lon: 105.7469, tz: 'Asia/Bangkok' },
+                { name: 'An Giang', country: 'VN', lat: 10.5214, lon: 105.1259, tz: 'Asia/Bangkok' },
+                { name: 'Bà Rịa - Vũng Tàu', country: 'VN', lat: 10.4113, lon: 107.1365, tz: 'Asia/Bangkok' },
+                { name: 'Bắc Giang', country: 'VN', lat: 21.2819, lon: 106.1975, tz: 'Asia/Bangkok' },
+                { name: 'Bắc Kạn', country: 'VN', lat: 22.1477, lon: 105.8348, tz: 'Asia/Bangkok' },
+                { name: 'Bạc Liêu', country: 'VN', lat: 9.2941, lon: 105.7272, tz: 'Asia/Bangkok' },
+                { name: 'Bắc Ninh', country: 'VN', lat: 21.1862, lon: 106.0763, tz: 'Asia/Bangkok' },
+                { name: 'Bến Tre', country: 'VN', lat: 10.2415, lon: 106.3756, tz: 'Asia/Bangkok' },
+                { name: 'Bình Định', country: 'VN', lat: 13.7765, lon: 109.2233, tz: 'Asia/Bangkok' },
+                { name: 'Bình Dương', country: 'VN', lat: 11.1629, lon: 106.6522, tz: 'Asia/Bangkok' },
+                { name: 'Bình Phước', country: 'VN', lat: 11.7512, lon: 106.7235, tz: 'Asia/Bangkok' },
+                { name: 'Bình Thuận', country: 'VN', lat: 11.0904, lon: 108.0721, tz: 'Asia/Bangkok' },
+                { name: 'Cà Mau', country: 'VN', lat: 9.1769, lon: 105.1502, tz: 'Asia/Bangkok' },
+                { name: 'Cao Bằng', country: 'VN', lat: 22.6657, lon: 106.2522, tz: 'Asia/Bangkok' },
+                { name: 'Đậk Lậk', country: 'VN', lat: 12.6661, lon: 108.0503, tz: 'Asia/Bangkok' },
+                { name: 'Đậk Nông', country: 'VN', lat: 12.0046, lon: 107.6878, tz: 'Asia/Bangkok' },
+                { name: 'Điện Biên', country: 'VN', lat: 21.3860, lon: 103.0160, tz: 'Asia/Bangkok' },
+                { name: 'Đồng Nai', country: 'VN', lat: 11.0686, lon: 107.1676, tz: 'Asia/Bangkok' },
+                { name: 'Đồng Tháp', country: 'VN', lat: 10.4937, lon: 105.6882, tz: 'Asia/Bangkok' },
+                { name: 'Gia Lai', country: 'VN', lat: 13.8079, lon: 108.1094, tz: 'Asia/Bangkok' },
+                { name: 'Hà Giang', country: 'VN', lat: 22.8026, lon: 104.9784, tz: 'Asia/Bangkok' },
+                { name: 'Hà Nam', country: 'VN', lat: 20.5835, lon: 105.9231, tz: 'Asia/Bangkok' },
+                { name: 'Hà Tĩnh', country: 'VN', lat: 18.3559, lon: 105.8879, tz: 'Asia/Bangkok' },
+                { name: 'Hải Dương', country: 'VN', lat: 20.9397, lon: 106.3312, tz: 'Asia/Bangkok' },
+                { name: 'Hậu Giang', country: 'VN', lat: 9.7883, lon: 105.4663, tz: 'Asia/Bangkok' },
+                { name: 'Hòa Bình', country: 'VN', lat: 20.8131, lon: 105.3381, tz: 'Asia/Bangkok' },
+                { name: 'Hưng Yên', country: 'VN', lat: 20.6464, lon: 106.0511, tz: 'Asia/Bangkok' },
+                { name: 'Khánh Hòa', country: 'VN', lat: 12.2388, lon: 109.1967, tz: 'Asia/Bangkok' },
+                { name: 'Kiên Giang', country: 'VN', lat: 10.0125, lon: 105.0809, tz: 'Asia/Bangkok' },
+                { name: 'Kon Tum', country: 'VN', lat: 14.3497, lon: 108.0005, tz: 'Asia/Bangkok' },
+                { name: 'Lai Châu', country: 'VN', lat: 22.3862, lon: 103.4706, tz: 'Asia/Bangkok' },
+                { name: 'Lâm Đồng', country: 'VN', lat: 11.9465, lon: 108.4419, tz: 'Asia/Bangkok' },
+                { name: 'Lạng Sơn', country: 'VN', lat: 21.8527, lon: 106.7611, tz: 'Asia/Bangkok' },
+                { name: 'Lào Cai', country: 'VN', lat: 22.4809, lon: 103.9755, tz: 'Asia/Bangkok' },
+                { name: 'Long An', country: 'VN', lat: 10.5355, lon: 106.4154, tz: 'Asia/Bangkok' },
+                { name: 'Nam Định', country: 'VN', lat: 20.4388, lon: 106.1621, tz: 'Asia/Bangkok' },
+                { name: 'Nghệ An', country: 'VN', lat: 18.9082, lon: 105.6812, tz: 'Asia/Bangkok' },
+                { name: 'Ninh Bình', country: 'VN', lat: 20.2538, lon: 105.9745, tz: 'Asia/Bangkok' },
+                { name: 'Ninh Thuận', country: 'VN', lat: 11.5654, lon: 108.9888, tz: 'Asia/Bangkok' },
+                { name: 'Phú Thọ', country: 'VN', lat: 21.4213, lon: 105.2200, tz: 'Asia/Bangkok' },
+                { name: 'Phú Yên', country: 'VN', lat: 13.0882, lon: 109.0929, tz: 'Asia/Bangkok' },
+                { name: 'Quảng Bình', country: 'VN', lat: 17.4689, lon: 106.5980, tz: 'Asia/Bangkok' },
+                { name: 'Quảng Nam', country: 'VN', lat: 15.5736, lon: 108.4783, tz: 'Asia/Bangkok' },
+                { name: 'Quảng Ngãi', country: 'VN', lat: 15.1214, lon: 108.8044, tz: 'Asia/Bangkok' },
+                { name: 'Quảng Ninh', country: 'VN', lat: 21.0064, lon: 107.2925, tz: 'Asia/Bangkok' },
+                { name: 'Quảng Trị', country: 'VN', lat: 16.7403, lon: 107.1854, tz: 'Asia/Bangkok' },
+                { name: 'Sóc Trăng', country: 'VN', lat: 9.6037, lon: 105.9737, tz: 'Asia/Bangkok' },
+                { name: 'Sơn La', country: 'VN', lat: 21.3274, lon: 103.9150, tz: 'Asia/Bangkok' },
+                { name: 'Tây Ninh', country: 'VN', lat: 11.3352, lon: 106.1098, tz: 'Asia/Bangkok' },
+                { name: 'Thái Bình', country: 'VN', lat: 20.4463, lon: 106.3365, tz: 'Asia/Bangkok' },
+                { name: 'Thái Nguyên', country: 'VN', lat: 21.5942, lon: 105.8412, tz: 'Asia/Bangkok' },
+                { name: 'Thanh Hóa', country: 'VN', lat: 19.8067, lon: 105.7851, tz: 'Asia/Bangkok' },
+                { name: 'Thừa Thiên Huế', country: 'VN', lat: 16.4637, lon: 107.5909, tz: 'Asia/Bangkok' },
+                { name: 'Tiền Giang', country: 'VN', lat: 10.3494, lon: 106.3583, tz: 'Asia/Bangkok' },
+                { name: 'Trà Vinh', country: 'VN', lat: 9.9477, lon: 106.3445, tz: 'Asia/Bangkok' },
+                { name: 'Tuyên Quang', country: 'VN', lat: 21.8236, lon: 105.2181, tz: 'Asia/Bangkok' },
+                { name: 'Vĩnh Long', country: 'VN', lat: 10.2538, lon: 105.9721, tz: 'Asia/Bangkok' },
+                { name: 'Vĩnh Phúc', country: 'VN', lat: 21.3609, lon: 105.5474, tz: 'Asia/Bangkok' },
+                { name: 'Yên Bái', country: 'VN', lat: 21.7051, lon: 104.8752, tz: 'Asia/Bangkok' },
+                // ===== QUỐC TẾ =====
+                { name: 'Tokyo', country: 'JP', lat: 35.6762, lon: 139.6503, tz: 'Asia/Tokyo' },
+                { name: 'Seoul', country: 'KR', lat: 37.5665, lon: 126.9780, tz: 'Asia/Seoul' },
+                { name: 'Singapore', country: 'SG', lat: 1.3521, lon: 103.8198, tz: 'Asia/Singapore' },
+                { name: 'Bangkok', country: 'TH', lat: 13.7563, lon: 100.5018, tz: 'Asia/Bangkok' },
+                { name: 'Beijing', country: 'CN', lat: 39.9042, lon: 116.4074, tz: 'Asia/Shanghai' },
+                { name: 'Shanghai', country: 'CN', lat: 31.2304, lon: 121.4737, tz: 'Asia/Shanghai' },
+                { name: 'Hong Kong', country: 'HK', lat: 22.3193, lon: 114.1694, tz: 'Asia/Hong_Kong' },
+                { name: 'Osaka', country: 'JP', lat: 34.6937, lon: 135.5023, tz: 'Asia/Tokyo' },
+                { name: 'Taipei', country: 'TW', lat: 25.0330, lon: 121.5654, tz: 'Asia/Taipei' },
+                { name: 'Jakarta', country: 'ID', lat: -6.2088, lon: 106.8456, tz: 'Asia/Jakarta' },
+                { name: 'Kuala Lumpur', country: 'MY', lat: 3.1390, lon: 101.6869, tz: 'Asia/Kuala_Lumpur' },
+                { name: 'Manila', country: 'PH', lat: 14.5995, lon: 120.9842, tz: 'Asia/Manila' },
+                { name: 'London', country: 'GB', lat: 51.5074, lon: -0.1278, tz: 'Europe/London' },
+                { name: 'Paris', country: 'FR', lat: 48.8566, lon: 2.3522, tz: 'Europe/Paris' },
+                { name: 'Berlin', country: 'DE', lat: 52.5200, lon: 13.4050, tz: 'Europe/Berlin' },
+                { name: 'New York', country: 'US', lat: 40.7128, lon: -74.0060, tz: 'America/New_York' },
+                { name: 'Los Angeles', country: 'US', lat: 34.0522, lon: -118.2437, tz: 'America/Los_Angeles' },
+                { name: 'Sydney', country: 'AU', lat: -33.8688, lon: 151.2093, tz: 'Australia/Sydney' },
+                { name: 'Dubai', country: 'AE', lat: 25.2048, lon: 55.2708, tz: 'Asia/Dubai' },
+                { name: 'Moscow', country: 'RU', lat: 55.7558, lon: 37.6173, tz: 'Europe/Moscow' }
+            ];
 
-        var currentCity = CITIES[0];
-        var LAT = currentCity.lat;
-        var LON = currentCity.lon;
-        var CITY_NAME = currentCity.name + ', ' + currentCity.country;
-        var TZ = currentCity.tz;
+            var currentCity = CITIES[0];
+            var LAT = currentCity.lat;
+            var LON = currentCity.lon;
+            var CITY_NAME = currentCity.name + ', ' + currentCity.country;
+            var TZ = currentCity.tz;
 
-        // --- City Search UI ---
-        var cityInput = document.getElementById('weather-city-input');
-        var cityDropdown = document.getElementById('weather-city-dropdown');
+            // --- City Search UI ---
+            var cityInput = document.getElementById('weather-city-input');
+            var cityDropdown = document.getElementById('weather-city-dropdown');
 
-        function filterCities(q) {
-            if (!q) return CITIES;
-            q = q.toLowerCase();
-            return CITIES.filter(function(c) {
-                return c.name.toLowerCase().indexOf(q) !== -1 || c.country.toLowerCase().indexOf(q) !== -1;
-            });
-        }
-
-        function renderDropdown(cities) {
-            if (!cities.length) {
-                cityDropdown.innerHTML = '<div class="city-option no-result">Không tìm thấy</div>';
-            } else {
-                cityDropdown.innerHTML = cities.map(function(c) {
-                    return '<div class="city-option" data-lat="' + c.lat + '" data-lon="' + c.lon +
-                        '" data-name="' + c.name + '" data-country="' + c.country +
-                        '" data-tz="' + c.tz + '">' +
-                        '<span class="city-flag">' + getFlagEmoji(c.country) + '</span>' +
-                        '<span class="city-label">' + c.name + '</span>' +
-                        '<span class="city-country">' + c.country + '</span>' +
-                        '</div>';
-                }).join('');
-            }
-            cityDropdown.style.display = 'block';
-        }
-
-        function getFlagEmoji(code) {
-            var flags = { VN:'🇻🇳', JP:'🇯🇵', KR:'🇰🇷', SG:'🇸🇬', TH:'🇹🇭', CN:'🇨🇳', GB:'🇬🇧', FR:'🇫🇷', US:'🇺🇸', AU:'🇦🇺', AE:'🇦🇪', RU:'🇷🇺', DE:'🇩🇪', TW:'🇹🇼', ID:'🇮🇩' };
-            return flags[code] || '🌍';
-        }
-
-        cityInput.addEventListener('input', function() {
-            var q = this.value.trim();
-            if (q.length === 0) { cityDropdown.style.display = 'none'; return; }
-            renderDropdown(filterCities(q));
-        });
-
-        cityInput.addEventListener('focus', function() {
-            renderDropdown(CITIES.slice(0, 8));
-        });
-
-        cityDropdown.addEventListener('click', function(e) {
-            var opt = e.target.closest('.city-option');
-            if (!opt || opt.classList.contains('no-result')) return;
-            LAT = parseFloat(opt.dataset.lat);
-            LON = parseFloat(opt.dataset.lon);
-            CITY_NAME = opt.dataset.name + ', ' + opt.dataset.country;
-            TZ = opt.dataset.tz;
-            cityInput.value = '';
-            cityDropdown.style.display = 'none';
-            fetchWeather();
-        });
-
-        document.addEventListener('click', function(e) {
-            if (!e.target.closest('.weather-search-wrap')) {
-                cityDropdown.style.display = 'none';
-            }
-        });
-
-        function getWeatherIcon(code, isDay) {
-            var icons = {
-                0: isDay ? 'fa-sun' : 'fa-moon',
-                1: isDay ? 'fa-sun' : 'fa-moon',
-                2: 'fa-cloud-sun',
-                3: 'fa-cloud',
-                45: 'fa-smog', 48: 'fa-smog',
-                51: 'fa-cloud-drizzle', 53: 'fa-cloud-drizzle', 55: 'fa-cloud-drizzle',
-                61: 'fa-cloud-rain', 63: 'fa-cloud-rain', 65: 'fa-cloud-showers-heavy',
-                80: 'fa-cloud-rain', 81: 'fa-cloud-showers-heavy', 82: 'fa-cloud-showers-heavy',
-                95: 'fa-bolt', 96: 'fa-bolt', 99: 'fa-bolt'
-            };
-            return icons[code] || 'fa-cloud';
-        }
-
-        function getWeatherDesc(code, isDay) {
-            var desc = {
-                0: isDay ? 'Trời nắng đẹp ☀️' : 'Trời quang đêm 🌙',
-                1: isDay ? 'Chủ yếu quang đãng' : 'Đêm quang đãng',
-                2: 'Có mây rải rác ⛅',
-                3: 'Nhiều mây ☁️',
-                45: 'Sương mù 🌫️', 48: 'Sương mù băng giá',
-                51: 'Mưa phùn nhẹ', 53: 'Mưa phùn vừa', 55: 'Mưa phùn dày',
-                61: 'Mưa nhỏ 🌧️', 63: 'Mưa vừa 🌧️', 65: 'Mưa lớn 🌧️',
-                80: 'Mưa rào 🌦️', 81: 'Mưa rào vừa', 82: 'Mưa rào nặng',
-                95: 'Dông sét ⛈️', 96: 'Dông mưa đá', 99: 'Dông mưa đá nặng'
-            };
-            return desc[code] || 'Không xác định';
-        }
-
-        function updateClock() {
-            var now = new Date();
-            var hh = String(now.getHours()).padStart(2, '0');
-            var mm = String(now.getMinutes()).padStart(2, '0');
-            var ss = String(now.getSeconds()).padStart(2, '0');
-            var dd = String(now.getDate()).padStart(2, '0');
-            var mo = String(now.getMonth() + 1).padStart(2, '0');
-            var yy = now.getFullYear();
-            var days = ['Chủ Nhật','Thứ Hai','Thứ Ba','Thứ Tư','Thứ Năm','Thứ Sáu','Thứ Bảy'];
-            document.getElementById('weather-time').textContent = hh + ':' + mm + ':' + ss;
-            document.getElementById('weather-date').textContent = days[now.getDay()] + ', ' + dd + '/' + mo + '/' + yy;
-        }
-
-        function fetchWeather() {
-            var url = 'https://api.open-meteo.com/v1/forecast?latitude=' + LAT + '&longitude=' + LON +
-                '&current=temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation_probability,weather_code,is_day,uv_index' +
-                '&hourly=temperature_2m,relative_humidity_2m,precipitation_probability,wind_speed_10m,uv_index&timezone=' + encodeURIComponent(TZ) +
-                '&forecast_days=1';
-
-            document.getElementById('weather-location').innerHTML = '<i class="fas fa-map-marker-alt"></i> ' + CITY_NAME;
-
-            fetch(url)
-                .then(function(r) { return r.json(); })
-                .then(function(data) {
-                    var c = data.current;
-                    var temp = Math.round(c.temperature_2m);
-                    var humidity = c.relative_humidity_2m;
-                    var wind = Math.round(c.wind_speed_10m);
-                    var rain = c.precipitation_probability || 0;
-                    var code = c.weather_code || 0;
-                    var isDay = c.is_day;
-                    var uv = c.uv_index !== undefined ? c.uv_index.toFixed(1) : '--';
-
-                    document.getElementById('weather-temp').textContent = temp;
-                    document.getElementById('weather-humidity').textContent = humidity + '%';
-                    document.getElementById('weather-wind').textContent = wind + ' km/h';
-                    document.getElementById('weather-rain').textContent = rain + '%';
-                    document.getElementById('weather-uv').textContent = uv;
-                    document.getElementById('weather-desc').textContent = getWeatherDesc(code, isDay);
-
-                    var iconEl = document.getElementById('weather-icon');
-                    iconEl.className = 'fas ' + getWeatherIcon(code, isDay);
-
-                    var wrap = document.getElementById('weather-icon-wrap');
-                    if (isDay) {
-                        wrap.style.background = 'linear-gradient(135deg, rgba(232,160,32,.2), rgba(240,192,64,.15))';
-                        wrap.style.borderColor = 'rgba(232,160,32,.4)';
-                        iconEl.style.color = '#f0c040';
-                    } else {
-                        wrap.style.background = 'linear-gradient(135deg, rgba(44,196,196,.15), rgba(110,221,221,.1))';
-                        wrap.style.borderColor = 'rgba(44,196,196,.35)';
-                        iconEl.style.color = '#6edddd';
-                    }
-
-                    var now = new Date();
-                    document.getElementById('weather-updated').textContent = 'Cập nhật lúc ' +
-                        String(now.getHours()).padStart(2,'0') + ':' + String(now.getMinutes()).padStart(2,'0');
-                })
-                .catch(function() {
-                    document.getElementById('weather-desc').textContent = 'Không thể tải dữ liệu thời tiết';
-                    document.getElementById('weather-updated').textContent = 'Lỗi kết nối';
+            function filterCities(q) {
+                if (!q) return CITIES;
+                q = q.toLowerCase();
+                return CITIES.filter(function (c) {
+                    return c.name.toLowerCase().indexOf(q) !== -1 || c.country.toLowerCase().indexOf(q) !== -1;
                 });
-        }
+            }
 
-        document.addEventListener('DOMContentLoaded', function() {
-            updateClock();
-            setInterval(updateClock, 1000);
-            fetchWeather();
-            setInterval(fetchWeather, 10 * 60 * 1000); // refresh every 10 min
+            function renderDropdown(cities) {
+                if (!cities.length) {
+                    cityDropdown.innerHTML = '<div class="city-option no-result">Không tìm thấy</div>';
+                } else {
+                    cityDropdown.innerHTML = cities.map(function (c) {
+                        return '<div class="city-option" data-lat="' + c.lat + '" data-lon="' + c.lon +
+                            '" data-name="' + c.name + '" data-country="' + c.country +
+                            '" data-tz="' + c.tz + '">' +
+                            '<span class="city-flag">' + getFlagEmoji(c.country) + '</span>' +
+                            '<span class="city-label">' + c.name + '</span>' +
+                            '<span class="city-country">' + c.country + '</span>' +
+                            '</div>';
+                    }).join('');
+                }
+                cityDropdown.style.display = 'block';
+            }
 
-            document.getElementById('weather-refresh').addEventListener('click', function() {
-                var btn = this;
-                btn.style.transform = 'rotate(360deg)';
-                btn.style.transition = 'transform 0.6s ease';
-                setTimeout(function() { btn.style.transform = ''; btn.style.transition = ''; }, 700);
+            function getFlagEmoji(code) {
+                var flags = { VN: '🇻🇳', JP: '🇯🇵', KR: '🇰🇷', SG: '🇸🇬', TH: '🇹🇭', CN: '🇨🇳', GB: '🇬🇧', FR: '🇫🇷', US: '🇺🇸', AU: '🇦🇺', AE: '🇦🇪', RU: '🇷🇺', DE: '🇩🇪', TW: '🇹🇼', ID: '🇮🇩' };
+                return flags[code] || '🌍';
+            }
+
+            cityInput.addEventListener('input', function () {
+                var q = this.value.trim();
+                if (q.length === 0) { cityDropdown.style.display = 'none'; return; }
+                renderDropdown(filterCities(q));
+            });
+
+            cityInput.addEventListener('focus', function () {
+                renderDropdown(CITIES.slice(0, 8));
+            });
+
+            cityDropdown.addEventListener('click', function (e) {
+                var opt = e.target.closest('.city-option');
+                if (!opt || opt.classList.contains('no-result')) return;
+                LAT = parseFloat(opt.dataset.lat);
+                LON = parseFloat(opt.dataset.lon);
+                CITY_NAME = opt.dataset.name + ', ' + opt.dataset.country;
+                TZ = opt.dataset.tz;
+                cityInput.value = '';
+                cityDropdown.style.display = 'none';
                 fetchWeather();
             });
-        });
-    })();
 
-    // ===== GEMINI CHATBOT SCRIPT =====
-    (function() {
-        // Sử dụng đúng API key người dùng cung cấp
-        var GEMINI_API_KEY = 'AQ.Ab8RN6KMmy_sACaJIHX5xgwkqY2C6j6SWoQEloH45YkigV0DQg';
-        var GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key=' + GEMINI_API_KEY;
-        var chatHistory = [];
-        var isOpen = false;
-        var isTyping = false;
-        var SYSTEM_CTX = 'Ban la tro ly AI thong minh tren portfolio cua Pham Minh Hieu - sinh vien Cong nghe O to tai HCMUTE, lap trinh vien Backend (Spring Boot, FastAPI, Node.js, TensorFlow). Tra loi bang tieng Viet hoac tieng Anh theo nguoi dung. Than thien, ngan gon, huu ich.';
-
-        var fab = document.getElementById('chatbot-fab');
-        var panel = document.getElementById('chatbot-panel');
-        var messagesEl = document.getElementById('chatbot-messages');
-        var inputEl = document.getElementById('chatbot-input');
-        var sendBtn = document.getElementById('chatbot-send');
-        var closeBtn = document.getElementById('chatbot-close');
-        var clearBtn = document.getElementById('chatbot-clear');
-        var typingEl = document.getElementById('chatbot-typing');
-
-        function formatTime(d) {
-            return String(d.getHours()).padStart(2,'0') + ':' + String(d.getMinutes()).padStart(2,'0');
-        }
-
-        // Render markdown safely using DOM manipulation (no broken escape chains)
-        function renderMarkdown(text) {
-            // Process code blocks first
-            var parts = text.split(/(```[\s\S]*?```|`[^`]+`)/);
-            var html = '';
-            parts.forEach(function(p) {
-                if (p.startsWith('```') && p.endsWith('```')) {
-                    var inner = p.slice(3, -3).replace(/^\w+\n/, '');
-                    html += '<pre><code>' + escHtml(inner) + '</code></pre>';
-                } else if (p.startsWith('`') && p.endsWith('`')) {
-                    html += '<code>' + escHtml(p.slice(1,-1)) + '</code>';
-                } else {
-                    html += escHtml(p)
-                        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-                        .replace(/\*(.+?)\*/g, '<em>$1</em>')
-                        .replace(/\n/g, '<br>');
+            document.addEventListener('click', function (e) {
+                if (!e.target.closest('.weather-search-wrap')) {
+                    cityDropdown.style.display = 'none';
                 }
             });
-            return html;
-        }
 
-        function escHtml(s) {
-            var d = document.createElement('div');
-            d.appendChild(document.createTextNode(s));
-            return d.innerHTML;
-        }
-
-        function addMessage(text, role) {
-            var div = document.createElement('div');
-            div.className = 'chat-msg ' + role;
-            var bubble = document.createElement('div');
-            bubble.className = 'chat-bubble';
-            if (role === 'bot') {
-                bubble.innerHTML = renderMarkdown(text);
-            } else {
-                bubble.textContent = text;
-            }
-            var timeDiv = document.createElement('div');
-            timeDiv.className = 'chat-time';
-            timeDiv.textContent = (role === 'bot' ? 'Gemini' : 'Bạn') + ' • ' + formatTime(new Date());
-            div.appendChild(bubble);
-            div.appendChild(timeDiv);
-            messagesEl.appendChild(div);
-            messagesEl.scrollTop = messagesEl.scrollHeight;
-            return div;
-        }
-
-        function setTyping(v) {
-            isTyping = v;
-            typingEl.style.display = v ? 'flex' : 'none';
-            sendBtn.disabled = v;
-            inputEl.disabled = v;
-        }
-
-        function sendMessage() {
-            var text = inputEl.value.trim();
-            if (!text || isTyping) return;
-            inputEl.value = '';
-            inputEl.style.height = 'auto';
-
-            addMessage(text, 'user');
-
-            // Build contents: inject system context only at the very beginning
-            var userMsg = { role: 'user', parts: [{ text: text }] };
-            chatHistory.push(userMsg);
-
-            // Prepend context as a fake first exchange if first message
-            var contents;
-            if (chatHistory.length === 1) {
-                contents = [
-                    { role: 'user', parts: [{ text: SYSTEM_CTX + '\n\nNguoi dung: ' + text }] }
-                ];
-            } else {
-                contents = chatHistory.slice();
+            function getWeatherIcon(code, isDay) {
+                var icons = {
+                    0: isDay ? 'fa-sun' : 'fa-moon',
+                    1: isDay ? 'fa-sun' : 'fa-moon',
+                    2: 'fa-cloud-sun',
+                    3: 'fa-cloud',
+                    45: 'fa-smog', 48: 'fa-smog',
+                    51: 'fa-cloud-drizzle', 53: 'fa-cloud-drizzle', 55: 'fa-cloud-drizzle',
+                    61: 'fa-cloud-rain', 63: 'fa-cloud-rain', 65: 'fa-cloud-showers-heavy',
+                    80: 'fa-cloud-rain', 81: 'fa-cloud-showers-heavy', 82: 'fa-cloud-showers-heavy',
+                    95: 'fa-bolt', 96: 'fa-bolt', 99: 'fa-bolt'
+                };
+                return icons[code] || 'fa-cloud';
             }
 
-            setTyping(true);
+            function getWeatherDesc(code, isDay) {
+                var desc = {
+                    0: isDay ? 'Trời nắng đẹp ☀️' : 'Trời quang đêm 🌙',
+                    1: isDay ? 'Chủ yếu quang đãng' : 'Đêm quang đãng',
+                    2: 'Có mây rải rác ⛅',
+                    3: 'Nhiều mây ☁️',
+                    45: 'Sương mù 🌫️', 48: 'Sương mù băng giá',
+                    51: 'Mưa phùn nhẹ', 53: 'Mưa phùn vừa', 55: 'Mưa phùn dày',
+                    61: 'Mưa nhỏ 🌧️', 63: 'Mưa vừa 🌧️', 65: 'Mưa lớn 🌧️',
+                    80: 'Mưa rào 🌦️', 81: 'Mưa rào vừa', 82: 'Mưa rào nặng',
+                    95: 'Dông sét ⛈️', 96: 'Dông mưa đá', 99: 'Dông mưa đá nặng'
+                };
+                return desc[code] || 'Không xác định';
+            }
 
-            function doFetch(attempt) {
-                fetch(GEMINI_API_URL, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ contents: contents })
-                })
-                .then(function(r) {
-                    if (r.status === 503 || r.status === 429) {
-                        return r.json().then(function(e) {
-                            var err = new Error((e.error && e.error.message) || 'high demand');
-                            err.retryable = true;
-                            err.status = r.status;
-                            throw err;
-                        });
-                    }
-                    if (!r.ok) return r.json().then(function(e) { throw new Error((e.error && e.error.message) || 'HTTP ' + r.status); });
-                    return r.json();
-                })
-                .then(function(data) {
-                    setTyping(false);
-                    var reply = data.candidates &&
-                        data.candidates[0] &&
-                        data.candidates[0].content &&
-                        data.candidates[0].content.parts &&
-                        data.candidates[0].content.parts[0] &&
-                        data.candidates[0].content.parts[0].text;
-                    if (reply) {
-                        chatHistory.push({ role: 'model', parts: [{ text: reply }] });
-                        addMessage(reply, 'bot');
-                    } else {
-                        addMessage('Xin lỗi, không nhận được phản hồi. Vui lòng thử lại.', 'bot');
-                    }
-                })
-                .catch(function(err) {
-                    if (err.retryable && attempt < 3) {
-                        var delay = attempt * 2000; // 2s, 4s
-                        setTimeout(function() { doFetch(attempt + 1); }, delay);
-                    } else {
-                        setTyping(false);
-                        if (err.retryable) {
-                            // Friendly high-demand error with retry button
-                            var errDiv = document.createElement('div');
-                            errDiv.className = 'chat-msg bot';
-                            var bubble = document.createElement('div');
-                            bubble.className = 'chat-bubble';
-                            bubble.innerHTML = '⚠️ API đang quá tải. <button onclick="this.closest(\'.chat-msg\').remove();document.getElementById(\'chatbot-send\').click();" style="background:rgba(44,196,196,0.15);border:1px solid rgba(44,196,196,0.4);color:#2cc4c4;padding:2px 10px;border-radius:6px;cursor:pointer;font-size:0.75rem;margin-left:4px;">↻ Thử lại</button>';
-                            var timeDiv = document.createElement('div');
-                            timeDiv.className = 'chat-time';
-                            timeDiv.textContent = 'Gemini • ' + formatTime(new Date());
-                            errDiv.appendChild(bubble);
-                            errDiv.appendChild(timeDiv);
-                            messagesEl.appendChild(errDiv);
-                            messagesEl.scrollTop = messagesEl.scrollHeight;
+            function updateClock() {
+                var now = new Date();
+                var hh = String(now.getHours()).padStart(2, '0');
+                var mm = String(now.getMinutes()).padStart(2, '0');
+                var ss = String(now.getSeconds()).padStart(2, '0');
+                var dd = String(now.getDate()).padStart(2, '0');
+                var mo = String(now.getMonth() + 1).padStart(2, '0');
+                var yy = now.getFullYear();
+                var days = ['Chủ Nhật', 'Thứ Hai', 'Thứ Ba', 'Thứ Tư', 'Thứ Năm', 'Thứ Sáu', 'Thứ Bảy'];
+                document.getElementById('weather-time').textContent = hh + ':' + mm + ':' + ss;
+                document.getElementById('weather-date').textContent = days[now.getDay()] + ', ' + dd + '/' + mo + '/' + yy;
+            }
+
+            function fetchWeather() {
+                var url = 'https://api.open-meteo.com/v1/forecast?latitude=' + LAT + '&longitude=' + LON +
+                    '&current=temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation_probability,weather_code,is_day,uv_index' +
+                    '&hourly=temperature_2m,relative_humidity_2m,precipitation_probability,wind_speed_10m,uv_index&timezone=' + encodeURIComponent(TZ) +
+                    '&forecast_days=1';
+
+                document.getElementById('weather-location').innerHTML = '<i class="fas fa-map-marker-alt"></i> ' + CITY_NAME;
+
+                fetch(url)
+                    .then(function (r) { return r.json(); })
+                    .then(function (data) {
+                        var c = data.current;
+                        var temp = Math.round(c.temperature_2m);
+                        var humidity = c.relative_humidity_2m;
+                        var wind = Math.round(c.wind_speed_10m);
+                        var rain = c.precipitation_probability || 0;
+                        var code = c.weather_code || 0;
+                        var isDay = c.is_day;
+                        var uv = c.uv_index !== undefined ? c.uv_index.toFixed(1) : '--';
+
+                        document.getElementById('weather-temp').textContent = temp;
+                        document.getElementById('weather-humidity').textContent = humidity + '%';
+                        document.getElementById('weather-wind').textContent = wind + ' km/h';
+                        document.getElementById('weather-rain').textContent = rain + '%';
+                        document.getElementById('weather-uv').textContent = uv;
+                        document.getElementById('weather-desc').textContent = getWeatherDesc(code, isDay);
+
+                        var iconEl = document.getElementById('weather-icon');
+                        iconEl.className = 'fas ' + getWeatherIcon(code, isDay);
+
+                        var wrap = document.getElementById('weather-icon-wrap');
+                        if (isDay) {
+                            wrap.style.background = 'linear-gradient(135deg, rgba(232,160,32,.2), rgba(240,192,64,.15))';
+                            wrap.style.borderColor = 'rgba(232,160,32,.4)';
+                            iconEl.style.color = '#f0c040';
                         } else {
-                            addMessage('❌ ' + err.message, 'bot');
+                            wrap.style.background = 'linear-gradient(135deg, rgba(44,196,196,.15), rgba(110,221,221,.1))';
+                            wrap.style.borderColor = 'rgba(44,196,196,.35)';
+                            iconEl.style.color = '#6edddd';
                         }
+
+                        var now = new Date();
+                        document.getElementById('weather-updated').textContent = 'Cập nhật lúc ' +
+                            String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0');
+                    })
+                    .catch(function () {
+                        document.getElementById('weather-desc').textContent = 'Không thể tải dữ liệu thời tiết';
+                        document.getElementById('weather-updated').textContent = 'Lỗi kết nối';
+                    });
+            }
+
+            document.addEventListener('DOMContentLoaded', function () {
+                updateClock();
+                setInterval(updateClock, 1000);
+                fetchWeather();
+                setInterval(fetchWeather, 10 * 60 * 1000); // refresh every 10 min
+
+                document.getElementById('weather-refresh').addEventListener('click', function () {
+                    var btn = this;
+                    btn.style.transform = 'rotate(360deg)';
+                    btn.style.transition = 'transform 0.6s ease';
+                    setTimeout(function () { btn.style.transform = ''; btn.style.transition = ''; }, 700);
+                    fetchWeather();
+                });
+            });
+        })();
+
+        // ===== GEMINI CHATBOT SCRIPT =====
+        (function () {
+            // Sử dụng đúng API key người dùng cung cấp
+            var GEMINI_API_KEY = 'AQ.Ab8RN6KMmy_sACaJIHX5xgwkqY2C6j6SWoQEloH45YkigV0DQg';
+            var GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key=' + GEMINI_API_KEY;
+            var chatHistory = [];
+            var isOpen = false;
+            var isTyping = false;
+            var SYSTEM_CTX = 'Ban la tro ly AI thong minh tren portfolio cua Pham Minh Hieu - sinh vien Cong nghe O to tai HCMUTE, lap trinh vien Backend (Spring Boot, FastAPI, Node.js, TensorFlow). Tra loi bang tieng Viet hoac tieng Anh theo nguoi dung. Than thien, ngan gon, huu ich.';
+
+            var fab = document.getElementById('chatbot-fab');
+            var panel = document.getElementById('chatbot-panel');
+            var messagesEl = document.getElementById('chatbot-messages');
+            var inputEl = document.getElementById('chatbot-input');
+            var sendBtn = document.getElementById('chatbot-send');
+            var closeBtn = document.getElementById('chatbot-close');
+            var clearBtn = document.getElementById('chatbot-clear');
+            var typingEl = document.getElementById('chatbot-typing');
+
+            function formatTime(d) {
+                return String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0');
+            }
+
+            // Render markdown safely using DOM manipulation (no broken escape chains)
+            function renderMarkdown(text) {
+                // Process code blocks first
+                var parts = text.split(/(```[\s\S]*?```|`[^`]+`)/);
+                var html = '';
+                parts.forEach(function (p) {
+                    if (p.startsWith('```') && p.endsWith('```')) {
+                        var inner = p.slice(3, -3).replace(/^\w+\n/, '');
+                        html += '<pre><code>' + escHtml(inner) + '</code></pre>';
+                    } else if (p.startsWith('`') && p.endsWith('`')) {
+                        html += '<code>' + escHtml(p.slice(1, -1)) + '</code>';
+                    } else {
+                        html += escHtml(p)
+                            .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+                            .replace(/\*(.+?)\*/g, '<em>$1</em>')
+                            .replace(/\n/g, '<br>');
                     }
                 });
+                return html;
             }
-            doFetch(1);
-        }
 
-        fab.addEventListener('click', function() {
-            isOpen = !isOpen;
-            panel.classList.toggle('open', isOpen);
-            fab.classList.toggle('active', isOpen);
-            if (isOpen) {
-                setTimeout(function() { inputEl.focus(); }, 300);
-                document.getElementById('chatbot-badge').style.display = 'none';
+            function escHtml(s) {
+                var d = document.createElement('div');
+                d.appendChild(document.createTextNode(s));
+                return d.innerHTML;
             }
-        });
 
-        closeBtn.addEventListener('click', function() {
-            isOpen = false;
-            panel.classList.remove('open');
-            fab.classList.remove('active');
-        });
-
-        clearBtn.addEventListener('click', function() {
-            chatHistory = [];
-            messagesEl.innerHTML = '';
-            addMessage('Lịch sử đã được xóa. Tôi có thể giúp gì cho bạn? 😊', 'bot');
-        });
-
-        sendBtn.addEventListener('click', sendMessage);
-
-        inputEl.addEventListener('keydown', function(e) {
-            if (e.key === 'Enter' && !e.shiftKey) {
-                e.preventDefault();
-                sendMessage();
+            function addMessage(text, role) {
+                var div = document.createElement('div');
+                div.className = 'chat-msg ' + role;
+                var bubble = document.createElement('div');
+                bubble.className = 'chat-bubble';
+                if (role === 'bot') {
+                    bubble.innerHTML = renderMarkdown(text);
+                } else {
+                    bubble.textContent = text;
+                }
+                var timeDiv = document.createElement('div');
+                timeDiv.className = 'chat-time';
+                timeDiv.textContent = (role === 'bot' ? 'Gemini' : 'Bạn') + ' • ' + formatTime(new Date());
+                div.appendChild(bubble);
+                div.appendChild(timeDiv);
+                messagesEl.appendChild(div);
+                messagesEl.scrollTop = messagesEl.scrollHeight;
+                return div;
             }
-        });
 
-        inputEl.addEventListener('input', function() {
-            this.style.height = 'auto';
-            this.style.height = Math.min(this.scrollHeight, 120) + 'px';
-        });
-
-        setTimeout(function() {
-            if (!isOpen) {
-                var badge = document.getElementById('chatbot-badge');
-                badge.style.display = 'flex';
-                badge.classList.add('pulse');
+            function setTyping(v) {
+                isTyping = v;
+                typingEl.style.display = v ? 'flex' : 'none';
+                sendBtn.disabled = v;
+                inputEl.disabled = v;
             }
-        }, 3000);
 
-    })();
+            function sendMessage() {
+                var text = inputEl.value.trim();
+                if (!text || isTyping) return;
+                inputEl.value = '';
+                inputEl.style.height = 'auto';
+
+                addMessage(text, 'user');
+
+                // Build contents: inject system context only at the very beginning
+                var userMsg = { role: 'user', parts: [{ text: text }] };
+                chatHistory.push(userMsg);
+
+                // Prepend context as a fake first exchange if first message
+                var contents;
+                if (chatHistory.length === 1) {
+                    contents = [
+                        { role: 'user', parts: [{ text: SYSTEM_CTX + '\n\nNguoi dung: ' + text }] }
+                    ];
+                } else {
+                    contents = chatHistory.slice();
+                }
+
+                setTyping(true);
+
+                function doFetch(attempt) {
+                    fetch(GEMINI_API_URL, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ contents: contents })
+                    })
+                        .then(function (r) {
+                            if (r.status === 503 || r.status === 429) {
+                                return r.json().then(function (e) {
+                                    var err = new Error((e.error && e.error.message) || 'high demand');
+                                    err.retryable = true;
+                                    err.status = r.status;
+                                    throw err;
+                                });
+                            }
+                            if (!r.ok) return r.json().then(function (e) { throw new Error((e.error && e.error.message) || 'HTTP ' + r.status); });
+                            return r.json();
+                        })
+                        .then(function (data) {
+                            setTyping(false);
+                            var reply = data.candidates &&
+                                data.candidates[0] &&
+                                data.candidates[0].content &&
+                                data.candidates[0].content.parts &&
+                                data.candidates[0].content.parts[0] &&
+                                data.candidates[0].content.parts[0].text;
+                            if (reply) {
+                                chatHistory.push({ role: 'model', parts: [{ text: reply }] });
+                                addMessage(reply, 'bot');
+                            } else {
+                                addMessage('Xin lỗi, không nhận được phản hồi. Vui lòng thử lại.', 'bot');
+                            }
+                        })
+                        .catch(function (err) {
+                            if (err.retryable && attempt < 3) {
+                                var delay = attempt * 2000; // 2s, 4s
+                                setTimeout(function () { doFetch(attempt + 1); }, delay);
+                            } else {
+                                setTyping(false);
+                                if (err.retryable) {
+                                    // Friendly high-demand error with retry button
+                                    var errDiv = document.createElement('div');
+                                    errDiv.className = 'chat-msg bot';
+                                    var bubble = document.createElement('div');
+                                    bubble.className = 'chat-bubble';
+                                    bubble.innerHTML = '⚠️ API đang quá tải. <button onclick="this.closest(\'.chat-msg\').remove();document.getElementById(\'chatbot-send\').click();" style="background:rgba(44,196,196,0.15);border:1px solid rgba(44,196,196,0.4);color:#2cc4c4;padding:2px 10px;border-radius:6px;cursor:pointer;font-size:0.75rem;margin-left:4px;">↻ Thử lại</button>';
+                                    var timeDiv = document.createElement('div');
+                                    timeDiv.className = 'chat-time';
+                                    timeDiv.textContent = 'Gemini • ' + formatTime(new Date());
+                                    errDiv.appendChild(bubble);
+                                    errDiv.appendChild(timeDiv);
+                                    messagesEl.appendChild(errDiv);
+                                    messagesEl.scrollTop = messagesEl.scrollHeight;
+                                } else {
+                                    addMessage('❌ ' + err.message, 'bot');
+                                }
+                            }
+                        });
+                }
+                doFetch(1);
+            }
+
+            fab.addEventListener('click', function () {
+                isOpen = !isOpen;
+                panel.classList.toggle('open', isOpen);
+                fab.classList.toggle('active', isOpen);
+                if (isOpen) {
+                    setTimeout(function () { inputEl.focus(); }, 300);
+                    document.getElementById('chatbot-badge').style.display = 'none';
+                }
+            });
+
+            closeBtn.addEventListener('click', function () {
+                isOpen = false;
+                panel.classList.remove('open');
+                fab.classList.remove('active');
+            });
+
+            clearBtn.addEventListener('click', function () {
+                chatHistory = [];
+                messagesEl.innerHTML = '';
+                addMessage('Lịch sử đã được xóa. Tôi có thể giúp gì cho bạn? 😊', 'bot');
+            });
+
+            sendBtn.addEventListener('click', sendMessage);
+
+            inputEl.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    sendMessage();
+                }
+            });
+
+            inputEl.addEventListener('input', function () {
+                this.style.height = 'auto';
+                this.style.height = Math.min(this.scrollHeight, 120) + 'px';
+            });
+
+            setTimeout(function () {
+                if (!isOpen) {
+                    var badge = document.getElementById('chatbot-badge');
+                    badge.style.display = 'flex';
+                    badge.classList.add('pulse');
+                }
+            }, 3000);
+
+        })();
     </script>
 </body>
 
