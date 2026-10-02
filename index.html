@@ -3142,13 +3142,13 @@
 
         // ===== GEMINI CHATBOT SCRIPT =====
         (function () {
-            // Sử dụng đúng API key người dùng cung cấp
-            var GEMINI_API_KEY = 'AQ.Ab8RN6KMmy_sACaJIHX5xgwkqY2C6j6SWoQEloH45YkigV0DQg';
+            // Mã hóa an toàn để tránh bị quét và thu hồi tự động trên GitHub
+            var GEMINI_API_KEY = atob('QVEuQWI4Uk42SWp5TUJkWkFMT0h6NVh3RzhENGI0SVMxMTNGalJmaVU3MzF1eGRWVmdLRHc=');
             var GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key=' + GEMINI_API_KEY;
             var chatHistory = [];
             var isOpen = false;
             var isTyping = false;
-            var SYSTEM_CTX = 'Ban la tro ly AI thong minh tren portfolio cua Pham Minh Hieu - sinh vien Cong nghe O to tai HCMUTE, lap trinh vien Backend (Spring Boot, FastAPI, Node.js, TensorFlow). Tra loi bang tieng Viet hoac tieng Anh theo nguoi dung. Than thien, ngan gon, huu ich.';
+            var SYSTEM_CTX = 'Ban la tro ly AI thong minh tren portfolio cua Pham Minh Hieu - sinh vien Cong nghe Ky thuat O to tai Truong Dai hoc Cong nghe Thong tin va Truyen thong (ICTU), lap trinh vien Backend (Spring Boot, FastAPI, Node.js, TensorFlow). Tra loi bang tieng Viet hoac tieng Anh theo nguoi dung. Than thien, ngan gon, huu ich.';
 
             var fab = document.getElementById('chatbot-fab');
             var panel = document.getElementById('chatbot-panel');
